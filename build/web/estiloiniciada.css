@@ -1,0 +1,301 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 12/10/2023, 8:54:33 a. m.
+    Author     : Sebas
+*/
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#dvv {
+    background-color: #1e2747;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-start;
+    width: 45%;
+
+
+}
+
+#ltrs {
+    display: flex;
+    flex-direction: row;
+    color: #00faf6eb;
+    text-align: center;
+    width: 80%;
+
+
+}
+
+#ltrs li {
+    list-style: none;
+    padding-inline: 5px;
+
+
+}
+
+#ltrs li a {
+    color: white;
+    text-decoration: none;
+
+
+}
+
+#sh {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    margin-bottom: 30px;
+    width: 35%;
+    justify-content: center;
+
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #1e2747;
+    align-items: center;
+    width: 100%;
+}
+
+#is {
+    background-color: #1e2747;
+    color: white;
+    display: flex;
+    align-content: center;
+    margin-inline: 25px;
+    border: none;
+}
+
+button:hover {
+
+    transform: scale(1.35);
+}
+
+#iz {
+    background-color: #007aff;
+    ;
+    color: white;
+    display: flex;
+    align-content: center;
+
+    border-radius: 10px;
+    border: 0;
+    height: 50px;
+    width: 95px;
+    justify-content: center;
+    align-items: center;
+}
+
+#sz {
+    background-color: #1e2747;
+    color: white;
+    border: 1px solid blue;
+    border-radius: 40px;
+    height: 50px;
+    width: 195px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+
+}
+
+#sz:focus {
+    outline: none;
+
+}
+
+#ino {
+    width: 32px;
+    height: 54px;
+    margin-left: 20px;
+    color: white;
+}
+
+#sz:focus {
+    padding: 5px;
+    width: 270px;
+    transition: 1s;
+    color: white;
+}
+
+#tle {
+    color: aqua;
+
+}
+
+#iss {
+    background-color: #1e2747;
+
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 50px;
+    border: aqua solid 20px;
+    width: 500px;
+}
+
+#fm {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#bdy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lbl {
+    display: flex;
+    justify-content: center;
+}
+
+#immg {
+    width: 110px;
+    height: 110px;
+}
+
+#isss {
+    background-color: #1e2747;
+    width: 500px;
+    height: 530px;
+    margin-top: 50px;
+    border-radius: 50px;
+    border: aqua solid 20px;
+}
+
+#dpd {
+    background-color: #1e2747;
+    border: aqua solid 2px;
+    margin-inline: 5px;
+    color: white;
+    
+}
+
+#iimg {
+    width: 20%;
+}
+
+#bttt {
+    width: 25%;
+    display: contents;
+}
+
+#xd {
+    background-color: #1e2747;
+
+}
+
+#dpdwns {
+    background-color: aqua solid;
+    color: white;
+}
+
+#oi {
+    background-color: #1e2747;
+
+
+
+}
+
+#oi:hover {
+    color: aqua;
+}
+
+#ill {
+    background-color: aqua;
+}
+
+#ccarousel {
+
+    height: 420px;
+
+
+    justify-content: center;
+}
+
+#paginas {
+    padding-left: 120px;
+
+
+
+
+}
+
+#paginasborder {
+    border-radius: 50px;
+    border: aqua solid 10px;
+    cursor: pointer;
+}
+
+img[id="paginasborder"]:hover {
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+#tlle {
+    color: aqua;
+    border-radius: 50px;
+    border: aqua solid 10px;
+
+}
+
+#carr {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+    flex-direction: row;
+}
+
+.shining-text {
+    margin: 2px 0;
+}
+
+#lbl {
+    flex-basis: fit-content;
+    margin-bottom: 15px;
+    width: 500px;
+    height: fit-content;
+    width: 100%;
+}
+
+.mss {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(22, 0, 120);
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    border: aqua solid 10px;
+    font-size: 50px;
+    font-family: gamer;
+
+}
+
+.pha {
+    padding-left: 35px;
+}
+
+@font-face {
+    font-family: gamer;
+    src: url('Gamerock.otf') format('truetype');
+}
+#di{
+    letter-spacing: 1.5px;
+    
+}

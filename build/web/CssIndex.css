@@ -1,0 +1,71 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 21/09/2023, 11:42:37 a. m.
+    Author     : Sebas
+*/
+body{
+    background-color: #ffffff;
+    background-attachment: fixed;
+    background-size: cover;
+    background: linear-gradient(to bottom, blueviolet, darkblue);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#logo{
+    margin-bottom: 90px;
+    width: 1264px;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items:  center;
+}
+#imgs{
+    
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    color: cyan;
+    justify-items: center;
+}
+#lp{
+    color: cyan;
+}
+#im{
+    border-radius: 40px;
+    border: 5px solid cyan;
+}
+.dl{
+    border-radius: 60px;
+    border: 10px solid white;
+}
+#btt{
+    color: white;
+#btt1{
+    color: white;
+#btt2{
+    color: white;
+#btt3{
+    color: white;
+}
+#logo button:hover{
+    background-color: aqua;
+    border: none;
+}
+#loading-svg {
+  display: none;
+ 
+  /* Estilos adicionales según tus necesidades */
+}
+input{
+    outline: none;
+}

@@ -1,0 +1,14 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<h2>Hello World!</h2>
+<nav>
+    <ul>
+        <li><a href="ControladorMenu?opcion=Pelicula">Pelicula</a></li>
+        <li><a href="ControladorMenu?opcion=Genero">Genero</a></li>
+        <li><a href="ControladorMenu?opcion=Cliente">Cliente</a></li>
+        <li><a href="ControladorMenu?opcion=Alquiler">Alquiler</a></li>
+        <li><a href="ControladorMenu?opcion=Usuario">Usuario</a></li>
+        <li><a href="ControladorMenu?opcion=FormCliente">FormCliente</a></li>
+        <li><a href="ControladorMenu?opcion=Auditoria">Auditoria</a></li>
+    </ul>
+</nav>

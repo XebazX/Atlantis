@@ -1,0 +1,77 @@
+<!-- templates/factura.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .receipt {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .receipt th, .receipt td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .receipt th {
+            background-color: #f2f2f2;
+        }
+        .total {
+            font-weight: bold;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Recibo de Compra</h2>
+            <p>Fecha: {{ fecha }}</p>
+        </div>
+        <table class="receipt">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+              
+                {% for detalle in productos_factura %}
+                    <tr>
+                        <td>{{ detalle.allp.nombreProducto }}</td>
+                        <td>${{ detalle.allp.precioProducto }}</td>
+                        <td>{{ detalle.cantidadDetalle }}</td>
+                        <td>${{ detalle.subTotalDetalle }}</td>
+                      </tr>
+                {% endfor %}
+            </tbody>
+            <tfoot>
+                <tr class="total">
+                    <td colspan="3">Total:</td>
+                    <td>${{ total }}</td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>¡Gracias por su compra!</p> <a href="{{url_for('Productos.index')}}">Volver!</a>
+    </div>
+</body>
+</html>
