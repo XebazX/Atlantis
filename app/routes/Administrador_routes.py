@@ -6,7 +6,7 @@ from flask_bcrypt import Bcrypt
 from app.extesiones import db
 
 
-bp = Blueprint('Administrador', __name__)
+bp giy= Blueprint('Administrador', __name__)
 
 
 @bp.route('/Administracion')
