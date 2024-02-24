@@ -10,7 +10,7 @@
     <script src="{{ url_for('static', filename='bootstrap-5.3.0/js/bootstrap.bundle.js') }}"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body  id="bdy" >
+<body  id="bdy" class="bg2"  >
 
 <div class="container mt-5">
     <div id="isss" class="col-md-6 offset-md-3">
@@ -24,6 +24,11 @@
         {% endwith %}
 
     <div >
+        <div id="ubic" >
+
+            <img id="ubic" src="{{ url_for('static', filename='imagenes/logo-log.jpg') }}" alt="" style="width: 35%; height: 35%; " >
+
+        </div>
 
         <form id="fm" method="post" action="{{ url_for('Administrador.login') }}">
             <div class="col-md-9">

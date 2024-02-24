@@ -11,7 +11,15 @@
 
     <title>Registro Cliente</title>
 </head>
-<body id="alc">
+<body id="alc" class="bg" >
+
+    <div>
+
+       
+         
+
+    </div>
+
     <div id="iss">
         <br>
         <center>
@@ -83,7 +91,7 @@
                 <center><a class="shining-text" href="{{ url_for('Administrador.login') }}">Ya tienes una cuenta? Inicia Sesion!</a></center>
                 <br><br>
                 <div id="lbl" class="col-12">
-                    <button id="lbl" class="btn btn-primary" type="submit" >Registrarse</button>
+                    <button id="lbl" class="btn btn-primary"  href="{{ url_for('Administrador.login') }}" type="submit" >Registrarse</button>
                 </div>
             </div>
         </form>

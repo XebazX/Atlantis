@@ -2,6 +2,7 @@ from flask import Blueprint, render_template, request, redirect, url_for
 from app.extesiones import db
 from app.models.Categoria import Categoria
 from app.models.Productos import Producto
+from app.models.Cliente import Cliente
 from flask_login import login_user, current_user, logout_user, login_required
 import os
 
@@ -11,9 +12,12 @@ bp = Blueprint('Productos', __name__)
 @bp.route("/Producto")
 @login_required
 def index():
+
+    nameuser = current_user.nombreCliente  # Reemplaza esto con la obtención del nombre de usuario
+    pl = nameuser[1] if nameuser else "No Hay Nombre"
     
     data = Producto.query.all()
-    return render_template("Productos/index.html",  data=data)
+    return render_template("Productos/index.html",  data=data, pl=pl)
 
 @bp.route("/ProductoAdm")
 @login_required
@@ -55,7 +59,7 @@ def add():
             if foto.filename != "":
                 saveimg(foto)
                 
-        return redirect(url_for("Productos.index", Categorias=categoria))
+        return redirect(url_for("Productos.indexAdm"))
     
     
     return render_template("Productos/add.html", Categorias=categoria )
@@ -92,7 +96,7 @@ def edit(id):
         db.session.commit()
         print(producto.imgp)
 
-        return redirect(url_for("Productos.index"))
+        return redirect(url_for("Productos.indexAdm"))
 
     return render_template("Productos/edit.html", producto=producto, categoriia=categoriia)
 
@@ -107,7 +111,7 @@ def delete(id):
     db.session.delete(detal)
     db.session.commit()
 
-    return redirect(url_for("Productos.index"))
+    return redirect(url_for("Productos.indexAdm"))
 
 
 

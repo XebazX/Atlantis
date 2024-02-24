@@ -31,7 +31,7 @@
                 {% for Producto in data %}
                     <tr>
                         <td>{{ Producto.idProducto }}</td>
-                        <td> <img src=" {{ url_for('static',filename='imagenes/'+Producto.imgp) }} " alt=""> </td>
+                        <td> <img style="width: 250px; height: 250px; " src=" {{ url_for('static',filename='imagenes/'+Producto.imgp) }} " alt=""> </td>
                         <td>{{ Producto.nombreProducto }}</td>
                         <td>{{ Producto.detalleProducto }}</td>
                         <td>{{ Producto.precioProducto }}</td>

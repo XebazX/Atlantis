@@ -4,7 +4,7 @@
 }
 
 #dvv {
-    background-color: #1e2747;
+    background-color: #000000;
     height: 150px;
     display: flex;
     align-items: center;
@@ -52,13 +52,13 @@
 #nav {
     display: flex;
     flex-direction: row;
-    background-color: #1e2747;
+    background-color: #000000;
     align-items: center;
     width: 100%;
 }
 
 #is {
-    background-color: #1e2747;
+    background-color: #000000;
     color: white;
     display: flex;
     align-content: center;
@@ -87,7 +87,7 @@ button:hover {
 }
 
 #sz {
-    background-color: #1e2747;
+    background-color: #000000;
     color: white;
     border: 1px solid blue;
     border-radius: 40px;
@@ -129,13 +129,13 @@ button:hover {
 }
 
 #iss {
-    background-color: #1e2747;
-
+    background-color:  #000000;
+    display: table;
     justify-content: center;
     margin-top: 50px;
     border-radius: 50px;
-    border: aqua solid 20px;
-    width: 700px;
+    border: aqua solid 10px;
+    width: 650px;
 }
 
 #fm {
@@ -163,16 +163,17 @@ button:hover {
 }
 
 #isss {
-    background-color: #1e2747;
+    background-color: #000000;
+    display: table;
     width: 500px;
     height: 530px;
     margin-top: 50px;
     border-radius: 50px;
-    border: aqua solid 20px;
+    border: aqua solid 10px;
 }
 
 #dpd {
-    background-color: #1e2747;
+    background-color:  #000000;
     border: aqua solid 2px;
     margin-inline: 5px;
     color: white;
@@ -269,20 +270,24 @@ img[id="paginasborder"]:hover {
 }
 
 .mss {
-    width: 80px;
-    height: 80px;
+    /* width: 80px; */
+    /* height: 80px; */
     background-color: rgb(22, 0, 120);
     color: aqua;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     border-radius: 50px;
-    border: aqua solid 10px;
+    border: aqua solid 7px;
     font-size: 50px;
       display: flex;
     /* align-items: center; */
-    width: 100vw;
-    justify-content: center;  font-family: gamer;
+    /* width: ; */
+    justify-content: center;  
+    font-family: gamer;
 
+}
+#gmr{
+    font-family: gamer;
 }
 
 .pha {
@@ -306,4 +311,53 @@ img[id="paginasborder"]:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.bg{
+    background-image: url('imagenes/paradisefood.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg2{
+    background-image: url('imagenes/productos.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+#ubic{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+body{
+    background-image: url('{{ url_for("static", filename"/imagenes/gifp-gif") }}');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#ttt{
+    color: aqua;
 }

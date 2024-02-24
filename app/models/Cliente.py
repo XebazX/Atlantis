@@ -10,5 +10,9 @@ class Cliente(db.Model, UserMixin):
     celularCliente = db.Column(db.String(45), nullable=True)
     contrasenaCliente = db.Column(db.String(256), nullable=True)
     
+    @property
+    def pl(self):
+        return self.nombreCliente[0] if self.nombreCliente else None
+    
     def get_id(self):
         return str(self.idcliente)
