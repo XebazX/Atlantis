@@ -74,6 +74,9 @@
     .colw{
         color: white !important;
     }
+    .l{
+      padding: 0 10px;
+    }
     </style>
   </head>
   
@@ -82,18 +85,17 @@
           <br>
           <nav>
         <ul>
-            <li><a id="col" href="index.html">Iniciar Sesion</a></li>
-            <li><a id="col" href="registrar.html">Registrarse</a></li>
+          <li><img src=" {{ url_for("static", filename="/imagenes/logo.jpg")}}" style="width: 150px; height: 150px; " alt=""> </li>
             <li><a id="col" href="cursos.html">Cursos</a></li>
             <li><a id="col" href="#">Noticias</a></li>
-            <li><a class="dropdown-item" href="{{url_for('Administrador.logout')}}" >Cerrar session</a ></li>
+            <li><a class="dropdown-item " href="{{url_for('Administrador.logout')}}" >Cerrar session</a ></li>
             <li>  
             <div class="btn-group">
               <div>
                 <div class="pha">
                   <div class="mss">
                     <div id="hp">
-                      <strong id="gmr"> {{ current_user.pl }}</strong>
+                      <strong class="l" id="gmr"> {{ current_user.pl }}</strong>
                     </div>
                   </div>
                 </div>

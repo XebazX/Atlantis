@@ -85,8 +85,16 @@
             <li>
               {{ producto['producto'].nombreProducto }} - ${{ producto['producto'].precioProducto }}
                 <input type="text" name="cantidad" value="{{ producto.cantidad }}" min="1" readonly />
+                
+                <form action=" {{  url_for('carritos.eliminar_del_carrito',id=producto['producto'].idProducto) }} " method="post">
+
                 <button type="submit">Eliminar del carrito</button>
-              </form>
+                </form>
+                
+               
+
+
+              
               <span class="subtotal">Subtotal: ${{ producto['producto'].precioProducto * producto['cantidad'] }}</span>
             </li>
           {% endfor %}

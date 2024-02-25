@@ -313,11 +313,12 @@ img[id="paginasborder"]:hover {
     justify-content: space-between;
 }
 .bg{
-    background-image: url('imagenes/paradisefood.jpg');
+    background-image: url('imagenes/agreproduct.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-origin: content-box;
 }
 .bg2{
     background-image: url('imagenes/productos.jpg');

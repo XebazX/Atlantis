@@ -7,10 +7,14 @@
     <title>Factura</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+          background-image: url('{{ url_for("static", filename="/imagenes/VIR.gif") }}');
+          background-size: cover;
+          background-attachment: fixed;
+          background-position: center;
+          color: aqua;
         }
         .container {
+            background-color: black;
             max-width: 600px;
             margin: auto;
             border: 1px solid #ccc;
@@ -30,7 +34,7 @@
             text-align: left;
         }
         .receipt th {
-            background-color: #f2f2f2;
+            background-color: black;
         }
         .total {
             font-weight: bold;

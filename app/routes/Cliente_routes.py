@@ -43,7 +43,7 @@ def registro():
         db.session.add(NCliente)
         db.session.commit()
         
-        return redirect(url_for('login.index'))
+        return redirect(url_for('Administrador.login'))
 
     return render_template('Cliente/registro.html')
 
