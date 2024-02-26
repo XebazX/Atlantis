@@ -61,11 +61,53 @@
         .password-column {
             width: 30%;
         }
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+        
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .menu li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        .menu li:last-child {
+            margin-right: 0;
+        }
+        
+        .menu li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid #fff;
+        }
+        
+        .menu li a:hover {
+            background-color: #555;
+        }
     </style>
     <title>Autor</title>
 </head>
 <body>
+
     <div class="container">
+
+        <nav>
+            <ul class="menu">
+                <li><a href="{{ url_for('Categoria.index') }}" class="btn btn-secondary">Ir a Categoría</a></li>
+                <li><a href="{{ url_for('Cliente.index') }}" class="btn btn-secondary">Ir a Cliente</a></li>
+                <li><a href="{{ url_for('Detalle.index') }}" class="btn btn-secondary">Ir a Detalle</a></li>
+                <li><a href="{{ url_for('Productos.indexAdm') }}" class="btn btn-secondary">Ir a Productos</a></li>
+                <li><a href="{{url_for('Administrador.logout')}}" class="btn btn-primary">Cerrar Sesion</a></li>
+            </ul>
+        </nav>
+
         <h1>Administradores</h1>
         <table>
             <thead>
@@ -108,31 +150,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <a href="{{ url_for('Categoria.index') }}" class="btn btn-secondary">Ir a Categoría</a><br>
-    <a href="{{ url_for('Cliente.index') }}" class="btn btn-secondary">Ir a Cliente</a><br>
-    <a href="{{ url_for('Detalle.index') }}" class="btn btn-secondary">Ir a Detalle</a><br>
-    <a href="{{ url_for('Factura.index') }}" class="btn btn-secondary">Ir a Factura</a><br>
-    <a href="{{ url_for('Productos.indexAdm') }}" class="btn btn-secondary">Ir a Productos</a><br>
-    <a href="{{ url_for('Administrador.login') }}" class="btn btn-primary">Ir a Inicio de Sesión</a><br>
+    
     
 
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle"
-                             viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                        <path fill-rule="evenodd"
-                              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                        </svg>
-    <div class='btn-group'>
-        <button type='button' class='btn btn-tranparent dropdown-toggle' style='padding: 0; border: none; display: flex; align-items: center; gap: 5px;' data-bs-toggle='dropdown' aria-expanded='false' id='btnTogglee'>
-            <strong>{{ current_user.correoAdm }}</strong>  
-        </button>
-        <ul class='dropdown-menu' style='padding-left:10px; '>
-            <li><a class='dropdown-items' href='#'>Perfil</a></li>
-            
-            <li><hr class='dropdown-divider'></li>
-            <li><a class='dropdown-item' href="{{url_for('Administrador.logout')}}">Cerrar session</a></li>
-        </ul>
-    </div>
+    
 
 </body>
 </html>

@@ -77,6 +77,16 @@
     .l{
       padding: 0 10px;
     }
+    footer {
+      background-color: black;
+      padding: 20px;
+      text-align: center;
+  }
+  
+  .contact-info p {
+      margin: 5px;
+      font-size: 16px;
+  }
     </style>
   </head>
   
@@ -108,7 +118,9 @@
           </li>
         </ul>
       </nav>
-      <h1 id="col" >Productos</h1>
+      <br>  
+      <center><h1 id="col" >Productos</h1></center>
+      <br>
        <!-- <table class="table">
         <thead>
           <tr>
@@ -173,15 +185,21 @@
             </form> 
             </div>
           </div>
-
+          
         {% endfor %}
+        <br>
+      </div><br>
+      
+      <center>
+      <a href="{{ url_for('carritos.index') }}" class="btn btn-primary">Ir a Carrito</a> <br>
+      </center>
+    </div><br>
+    <footer>
+      <div class="contact-info">
+          <p>Teléfono: 321-956-6428</p>
+          <p>Correo: sebastianhellsing1999@gmail.com</p>
       </div>
-      
-      
-      <a href="{{ url_for('carritos.index') }}" class="btn btn-primary"
-        >Ir a Carrito</a
-      >
-    </div>
+  </footer>
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
