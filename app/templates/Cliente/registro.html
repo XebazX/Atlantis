@@ -17,14 +17,21 @@
         <center>
             <h1 id="tle">Registro</h1> 
         </center>
+       
+        <div id="ubic" >
+
+            <img id="ubic" src="{{ url_for('static', filename='imagenes/logo(registro).jpg') }}" alt="" style="width: 35%; height: 35%; " >
+
+        </div>
+
         <form id="fm" class="row g-3 needs-validation" action="{{ url_for('Cliente.registro') }}" method="post"> 
          
     
             <div class="col-md-9">
-                <div>
+                <div><br>
                     <div id="sepr">
                         <div>
-                            <br><label id="lbl" for="validationCustom01" class="form-label">Ingrese Su Nombre</label>
+                            <label id="lbl" for="validationCustom01" class="form-label">Ingrese Su Nombre</label><br>
                             <input type="text" class="form-control" id="nombre" name="nombre" required>
                             <div class="valid-feedback">
                                 Ok
