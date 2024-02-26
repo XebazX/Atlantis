@@ -9,11 +9,15 @@
     <title>Carrito de Compras</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            height: 100vh; /* Ajustar el tamaño del cuerpo para ocupar toda la altura visible del navegador */
-            display: flex;
-            flex-direction: column;
+          background-image: url('{{ url_for("static", filename="/imagenes/carrito.gif") }}');
+          background-size: cover;
+          background-attachment: fixed;
+          background-position: center;
+          margin: 0;
+          padding: 0;
+          height: 100vh; /* Ajustar el tamaño del cuerpo para ocupar toda la altura visible del navegador */
+          display: flex;
+          flex-direction: column;
         }
       .container {
         max-width: 800px;
